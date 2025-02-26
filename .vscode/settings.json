@@ -2,6 +2,9 @@
     "files.associations": {
         "ft_mini_ls.h": "c",
         "dirent.h": "c",
-        "sym_link": "c"
+        "sym_link": "c",
+        "stdbool.h": "c",
+        "stdio.h": "c",
+        "stat.h": "c"
     }
 }

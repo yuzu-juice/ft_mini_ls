@@ -5,8 +5,9 @@
 
 typedef struct  s_file
 {
-    char    *name;
-    long    mtime;
+    char            *name;
+    long            mtime;
+    struct s_file   *next;
 }   t_file;
 
-void	ft_qsort(long *elements, size_t start, size_t end);
+void	ft_qsort_list(t_file *files);

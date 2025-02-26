@@ -44,20 +44,14 @@ int main()
     // count files
     dir = opendir("./");
     if (dir == NULL)
-    {
-        perror(NULL);
-        return (1);
-    }
+        return (perror(NULL), 1);
     file_count = get_file_count(dir);
     closedir(dir);
 
     // aaaa
     dir = opendir("./");
     if (dir == NULL)
-    {
-        perror(NULL);
-        return (1);
-    }
+        return (perror(NULL), 1);
     while (true)
     {
         dp = readdir(dir);
